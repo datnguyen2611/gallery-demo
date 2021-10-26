@@ -1,22 +1,13 @@
 import './App.css';
-
+import UploadFile from "./components/uploadForm";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="" className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2 style={{color:"var(--primary)",marginBottom:"10px"}}>Gallery Demo</h2>
+      <h1 style={{color:"#000",marginBottom:"10px"}}>Pick your Images</h1>
+      <h3 style={{marginBottom:'0'}}>Click here </h3>
+      <i className="fas fa-arrow-down"></i>
+      <UploadFile/>
     </div>
   );
 }
